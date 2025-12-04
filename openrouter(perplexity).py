@@ -4,7 +4,7 @@ import os
 # Инициализация клиента OpenAI для OpenRouter
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key=os.getenv("OPENROUTER_API_KEY", "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"),
+    api_key=os.getenv("OPENROUTER_API_KEY", "YOUR API_KEY"),
 )
 
 MODEL_NAME = "perplexity/sonar-deep-research"
