@@ -23,7 +23,7 @@
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/yourusername/llm_api.git
+git clone https://github.com/ab0vee/llm_api 
 cd llm_api
 ```
 
@@ -31,20 +31,6 @@ cd llm_api
 ```bash
 pip install -r requirements.txt
 ```
-
-3. (Рекомендуется) Установите переменную окружения для API ключа:
-```bash
-# Windows PowerShell
-$env:OPENROUTER_API_KEY="your-api-key-here"
-
-# Windows CMD
-set OPENROUTER_API_KEY=your-api-key-here
-
-# Linux/Mac
-export OPENROUTER_API_KEY="your-api-key-here"
-```
-
-**Важно:** Если не установить переменную окружения, будет использован ключ по умолчанию из кода. Для безопасности рекомендуется использовать переменную окружения.
 
 ## Использование
 
@@ -90,17 +76,7 @@ LLM API - Модель: anthropic/claude-sonnet-4.5
 1. Зарегистрируйтесь на [OpenRouter.ai](https://openrouter.ai)
 2. Перейдите в настройки аккаунта
 3. Создайте API ключ
-4. Пополните баланс кредитов для использования моделей
-
-## Структура проекта
-
-```
-llm_api/
-├── main.py              # Основной файл приложения
-├── requirements.txt     # Зависимости проекта
-├── README.md           # Документация
-└── .gitignore          # Игнорируемые файлы для Git
-```
+4. Или можете использовать API ключ, кторый находитсч в main.py
 
 ## Зависимости
 
@@ -112,6 +88,3 @@ llm_api/
 - Скорость ответа зависит от загрузки серверов OpenRouter
 - Требуется активное интернет-соединение
 
-## Лицензия
-
-Этот проект распространяется под лицензией MI
