@@ -4,7 +4,7 @@ import os
 # Инициализация клиента OpenAI для OpenRouter
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key=os.getenv("OPENROUTER_API_KEY", "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"),
+    api_key=os.getenv("OPENROUTER_API_KEY", "YOUR API_KEY"),
 )
 
 MODEL_NAME = "anthropic/claude-sonnet-4.5"
