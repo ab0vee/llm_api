@@ -23,7 +23,7 @@
 
 1. Клонируйте репозиторий:
 ```bash
-git clone https://github.com/yourusername/llm_api.git
+git clone https://github.com/ab0vee/llm_api 
 cd llm_api
 ```
 
@@ -76,17 +76,7 @@ LLM API - Модель: anthropic/claude-sonnet-4.5
 1. Зарегистрируйтесь на [OpenRouter.ai](https://openrouter.ai)
 2. Перейдите в настройки аккаунта
 3. Создайте API ключ
-
-
-## Структура проекта
-
-```
-llm_api/
-├── main.py              # Основной файл приложения
-├── requirements.txt     # Зависимости проекта
-├── README.md           # Документация
-└── .gitignore          # Игнорируемые файлы для Git
-```
+4. Или можете использовать API ключ, кторый находитсч в main.py
 
 ## Зависимости
 
