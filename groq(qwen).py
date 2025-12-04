@@ -3,7 +3,7 @@ import os
 
 # Инициализация клиента Groq
 client = Groq(
-    api_key=os.getenv("GROQ_API_KEY", "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")
+    api_key=os.getenv("GROQ_API_KEY", "")
 )
 
 MODEL_NAME = "qwen/qwen3-32b"
