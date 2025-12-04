@@ -1,16 +1,13 @@
-from openai import OpenAI
+from groq import Groq
 import os
 
-# Инициализация клиента OpenAI для OpenRouter
-client = OpenAI(
-    base_url="https://openrouter.ai/api/v1",
-    api_key=os.getenv("OPENROUTER_API_KEY", "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"),
+# Инициализация клиента Groq
+client = Groq(
+    api_key=os.getenv("GROQ_API_KEY", "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")
 )
 
-MODEL_NAME = "anthropic/claude-sonnet-4.5"
+MODEL_NAME = "qwen/qwen3-32b"
 SYSTEM_PROMPT = "Ты умный ассистент, который отвечает на вопросы пользователя."
-MAX_TOKENS = 4000  # Ограничение токенов для ответа (чтобы не превысить лимит кредитов)
-
 
 def get_response(message: str):
     """Отправляет сообщение в LLM модель и возвращает ответ"""
@@ -21,7 +18,7 @@ def get_response(message: str):
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": message}
             ],
-            max_tokens=MAX_TOKENS,
+            reasoning_effort="none"  # Отключает режим размышления модели
         )
         return response.choices[0].message.content
     except Exception as e:
